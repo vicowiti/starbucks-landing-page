@@ -19,26 +19,26 @@ const ProductCard = ({
 }: ProductCardProps) => {
   return (
     <article
-      className="my-[5vh] w-full h-[90vh] flex text-white"
+      className="my-[5vh] rounded w-full h-[130vh] md:h-[90vh] md:flex  text-white flex-row-reverse md:flex-row"
       style={{
         backgroundColor: bgColor,
-        flexDirection: flex ? "row-reverse" : "row",
+        // flexDirection: flex ? "row-reverse" : "row",
       }}
     >
-      <div className="w-[50vw] flex items-center justify-center">
+      <div className="w-[100%] lg:w-[50vw] flex items-center justify-center">
         <div className=" flex flex-col items-center justify-center">
-          <header className="text-center text-6xl font-bold my-5 w-[400px]">
+          <header className="text-center px-3 text-5xl lg:text-6xl  font-bold my-5 w-[100%] lg:w-[400px]">
             {header}
           </header>
-          <body className="text-center text-2xl font-mono mb-14 w-[600px]">
+          <main className="text-center text-xl lg:text-2xl font-light mb-14 w-[100%] lg:w-[600px]">
             {text}
-          </body>
-          <footer>
+          </main>
+          <footer className="mb-3">
             <Button text="Learn more" borderColor="white" padding={7} />
           </footer>
         </div>
       </div>
-      <div className="w-[50vw] ">
+      <div className="w-[100%] lg:w-[50vw] ">
         <img src={img} alt="product image" className="h-[90vh] w-[100%]" />
       </div>
     </article>

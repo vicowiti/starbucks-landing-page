@@ -5,10 +5,11 @@ import ProductCard from "./components/ProductCard";
 import First from "./assets/1.jpg";
 import Second from "./assets/2.jpg";
 import Third from "./assets/3.jpg";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="max-w-[100vw]">
       <NavBar />
       <ProductCard
         img={First}
@@ -34,6 +35,7 @@ const App = () => {
         text="The new Cookies & Cream Cake Pop is a happy mix of chocolate cake, crumbled cookies and white chocolaty icing."
         order={1}
       />
+      <Footer />
     </div>
   );
 };
