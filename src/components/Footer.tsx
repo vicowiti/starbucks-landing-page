@@ -15,7 +15,7 @@ const moreLinks = {};
 const Footer = () => {
   return (
     <footer className="mt-[2vh] border-t-2 px-4 border-gray-400 w-[100vw]">
-      <section>
+      <section className="lg:flex lg:justify-evenly">
         <FooterPane text="About Us" data={footerData[0]} />
         <FooterPane text="Careers" data={footerData[1]} />
         <FooterPane text="Social Impact" data={footerData[2]} />
@@ -32,11 +32,23 @@ const Footer = () => {
           <FaTwitter className="text-2xl" />
         </div>
         <div>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
-            <li>CA Supply Chain Act</li>
-            <li>Cookie Preferences</li>
+          <ul className="lg:flex">
+            <li>
+              Privacy Policy{" "}
+              <span className="hidden lg:inline mx-5 font-thin">|</span>
+            </li>
+            <li>
+              Terms of Use{" "}
+              <span className="hidden lg:inline mx-5 font-thin">|</span>
+            </li>
+            <li>
+              CA Supply Chain Act{" "}
+              <span className="hidden lg:inline mx-5 font-thin">|</span>
+            </li>
+            <li>
+              Cookie Preferences{" "}
+              <span className="hidden lg:inline mx-5 font-thin">|</span>
+            </li>
           </ul>
         </div>
         <h6 className="text-gray-400 text-sm lg:text-lg">

@@ -25,7 +25,7 @@ const ProductCard = ({
         // flexDirection: flex ? "row-reverse" : "row",
       }}
     >
-      <div className="w-[100%] lg:w-[50vw] flex items-center justify-center">
+      <div className="h-[65vh] w-[100%] lg:w-[50vw] flex items-center justify-center">
         <div className=" flex flex-col items-center justify-center">
           <header className="text-center px-3 text-5xl lg:text-6xl  font-bold my-5 w-[100%] lg:w-[400px]">
             {header}
@@ -38,8 +38,12 @@ const ProductCard = ({
           </footer>
         </div>
       </div>
-      <div className="w-[100%] lg:w-[50vw] ">
-        <img src={img} alt="product image" className="h-[90vh] w-[100%]" />
+      <div className=" h-[65vh] w-[100%] lg:w-[50vw] ">
+        <img
+          src={img}
+          alt="product image"
+          className=" h-[65vh]  lg:h-[90vh] w-[100%]"
+        />
       </div>
     </article>
   );
